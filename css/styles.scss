@@ -11,6 +11,17 @@ body {
     font-family: sans-serif;
 }
 
+nav {
+    background-color: gray;
+    padding-block: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding-inline: 10px;
+}
+
 .characters {
     background-image: url('../img/rey-standing.jpg');
     background-position: center;
@@ -146,7 +157,7 @@ $section-cast__width: 800px;
 }
 
 .footer{
-    height: 350px;
+    height: 500px;
     background-image: url(../img/gallery.jpg);
     background-position: center;
 }
