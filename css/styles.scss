@@ -5,12 +5,17 @@ $content-width: 800px;
     background-color: rgb(184, 184, 184);
 }
 
+@mixin circle {
+    border-radius: 50%;
+    margin-inline: 10px;
+}
 
 body {
     margin: 0;
     font-family: sans-serif;
 }
 
+// Style Nav Bar
 nav {
     background-color: gray;
     padding-block: 5px;
@@ -22,6 +27,7 @@ nav a {
     padding-inline: 10px;
 }
 
+// Style Hero
 .hero {
     background-image: url('../img/welcome.jpg');
     background-size: cover;
@@ -74,6 +80,7 @@ nav a {
     font-size: 1.5rem;
 }
 
+// Style Characters Section
 .characters {
     background-image: url('../img/rey-standing.jpg');
     background-position: center;
@@ -86,11 +93,6 @@ nav a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
-
-@mixin circle {
-    border-radius: 50%;
-    margin-inline: 10px;
 }
 
 .circle.small {
@@ -127,6 +129,7 @@ nav a {
     padding-bottom: 30px;
 }
 
+// Style Ratings Section
 .rating {
     display: flex;
     flex-direction: column;
@@ -164,6 +167,7 @@ nav a {
     height: 185px;
 }
 
+// Style CAST section
 .section_cast{
     width: 100%;
     display: flex;
@@ -197,12 +201,22 @@ nav a {
     margin: 10px;
 }
 
+// Style Gallery section
 .gallery__content{
     height: 500px;
     background-image: url(../img/gallery.jpg);
     background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.gallery h1 {
+.gallery_section h1 {
   text-align: center;   
+}
+
+.gallery__content i {
+    color: white;
+    font-size: 50px;
+    margin-inline: 20px;
 }
