@@ -22,6 +22,58 @@ nav a {
     padding-inline: 10px;
 }
 
+.hero {
+    background-image: url('../img/welcome.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 30px;
+    color: grey;
+    font-weight: lighter;
+}
+
+.hero__text {
+    text-align: center;
+}
+
+
+// Style the Plot section
+.plot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+.plot img {
+    width: 30%;
+    margin-right: 20px;
+}
+
+.plot__content {
+    display: flex;
+    width: $content-width;
+    font-size: 1rem;
+}
+
+.plot__content p {
+    padding-top: 30px;
+}
+
+.plot__content span {
+    font-size: 1.5rem;
+}
+
 .characters {
     background-image: url('../img/rey-standing.jpg');
     background-position: center;
@@ -112,52 +164,45 @@ nav a {
     height: 185px;
 }
 
-$section-cast__margin: 330px;
-$section-cast__width: 800px;
-
-@mixin flex-row{
-    display: flex;
-    flex-direction: row;
-}
 .section_cast{
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
+    align-items: center;
 }
 
-.section-cast__about{
-    width: $section-cast__width;
-    text-align: left;
-    @include flex-row();
+.section-cast__content_Mark{
+    width: $content-width;
+    display: flex;
     justify-content: center;
-    justify-content: space-between;
-    padding-left: 10px;
-    margin-left: $section-cast__margin; 
 }
 
-.section-cast__about__img{
+.section-cast__content img{
     width: 130px;
-    height: 175px;
-    padding-right: 10px;    
+    padding-right: 5%;    
 }
 
-.section-cast__img{
-    @include flex-row();
+.section-cast__content p {
+    width: 70%;
+}
+
+.section-cast__img {
+    display: flex;
     justify-content: center;
-    justify-content: space-between;
-    width: $section-cast__width;
-    margin-left: $section-cast__margin;   
+    width: $content-width;
+    margin-top: 20px;
  }
 .images{
-    width: 100px;
-    height: 150px;
+    width: 120px;
     margin: 10px;
 }
 
-.footer{
+.gallery__content{
     height: 500px;
     background-image: url(../img/gallery.jpg);
     background-position: center;
+}
+
+.gallery h1 {
+  text-align: center;   
 }
